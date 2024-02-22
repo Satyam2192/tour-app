@@ -15,7 +15,7 @@ export default function CreateTour() {
     setError(null);
 
     try {
-      const response = await fetch('https://sk-home-backend-1.onrender.com/api/tour/create', {
+      const response = await fetch('https://tour-app-backend-g9b9.onrender.com/api/tour/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

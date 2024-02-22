@@ -9,7 +9,7 @@ const TourListingPage = () => {
 
   useEffect(() => {
     const fetchTours = async () => {
-      const response = await fetch('https://sk-home-backend-1.onrender.com/api/tour/get');
+      const response = await fetch('https://tour-app-backend-g9b9.onrender.com/api/tour/get');
       const data = await response.json();
       setTours(data);
     };

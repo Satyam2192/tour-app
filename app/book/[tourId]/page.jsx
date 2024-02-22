@@ -31,7 +31,7 @@ const BookingForm = () => {
     e.preventDefault();
     if (tourId) {
       try {
-        const response = await axios.post('https://sk-home-backend-1.onrender.com/api/booking/create', {
+        const response = await axios.post('https://tour-app-backend-g9b9.onrender.com/api/booking/create', {
           // user: userId,
           tour: tourId,
           bookingDate: selectedDate,
@@ -56,7 +56,7 @@ const BookingForm = () => {
     const fetchTour = async () => {
       if (tourId) {
         try {
-          const response = await fetch(`https://sk-home-backend-1.onrender.com/api/tour/get/${tourId}`);
+          const response = await fetch(`https://tour-app-backend-g9b9.onrender.com/api/tour/get/${tourId}`);
           if (!response.ok) {
             throw new Error('Failed to fetch tour data');
           }
