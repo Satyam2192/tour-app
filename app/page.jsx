@@ -47,12 +47,12 @@ const TourListingPage = () => {
                         </ul>
                       </div>
                       <h3 className="text-2xl lg:text-3xl font-bold leading-tight mb-2">
-                        <a className="hover:text-gray-100 transition duration-150 ease-in-out">
+                        <a className="text-gray-100 transition duration-150 ease-in-out">
                           {tour.title}
                         </a>
                       </h3>
                     </header>
-                    <Typography variant="body2" color="text.secondary" className="text-lg text-gray-400 flex-grow">
+                    <Typography variant="body2" color="text.secondary" className="text-lg text-gray-100 flex-grow">
                       {new Date(tour.startDate).toLocaleDateString()} - {new Date(tour.endDate).toLocaleDateString()}
                       <br />
                       Recurrence: {tour.recurrence}
