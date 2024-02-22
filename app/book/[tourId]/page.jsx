@@ -78,7 +78,7 @@ const BookingForm = () => {
   }
 
   return (
-    <section className="w-full dark:bg-gray-800 dark:text-gray-100">
+    <section className="w-full bg-gray-900 dark:text-gray-100">
       <div className="container max-w-6xl p-6 mx-auto pt-10 sm:pt-12">
         <div className="max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
           <img

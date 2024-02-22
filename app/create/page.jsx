@@ -38,27 +38,27 @@ export default function CreateTour() {
 
   return (
 
-    <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen p-6 bg-gray-900 flex items-center justify-center">
       <div className="container max-w-screen-lg mx-auto">
         <div>
-          <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+          <div className="bg-gray-800 rounded shadow-lg p-4 px-4 md:p-8 mb-6">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                <div className="text-gray-600">
+                <div className="text-gray-200">
                   <p className="font-medium text-lg">Tour Details</p>
                   <p>Please fill out all the fields.</p>
                 </div>
 
                 <div className="lg:col-span-2">
-                  <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
-                    <div className="md:col-span-5">
+                  <div className=" grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5 text-gray-200">
+                    <div className="md:col-span-5 ">
                       <label htmlFor="title" className="font-medium">
                         Title*
                       </label>
                       <input
                         type="text"
                         id="title"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("title")}
                       />
                       {errors.title && (
@@ -73,7 +73,7 @@ export default function CreateTour() {
                       <textarea
                         id="description"
                         rows="3"
-                        className="h-24 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-24 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("description")}
                       />
                     </div>
@@ -84,7 +84,7 @@ export default function CreateTour() {
                       <input
                         type="link"
                         id="imageUrls"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("imageUrls")}
                       />
                     </div>
@@ -96,7 +96,7 @@ export default function CreateTour() {
                       <input
                         type="number"
                         id="price"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("price")}
                       />
                       {errors.price && (
@@ -111,7 +111,7 @@ export default function CreateTour() {
                       <input
                         type="text"
                         id="location"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("location")}
                       />
                     </div>
@@ -123,7 +123,7 @@ export default function CreateTour() {
                       <input
                         type="number"
                         id="capacity"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register("capacity")}
                       />
                       {errors.capacity && (
@@ -137,7 +137,7 @@ export default function CreateTour() {
                       <input
                         type="date"
                         id="startDate"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register('startDate')}
                       />
                       {errors.startDate && (
@@ -150,7 +150,7 @@ export default function CreateTour() {
                       </label>
                       <select
                         id="recurrence"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register('recurrence')}
                       >
                         <option value="Daily">Daily</option>
@@ -169,7 +169,7 @@ export default function CreateTour() {
                       <input
                         type="date"
                         id="endDate"
-                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                        className="h-10 border mt-1 rounded px-4 w-full bg-gray-400 text-black"
                         {...register('endDate')}
                       />
                       {errors.endDate && (
@@ -189,13 +189,13 @@ export default function CreateTour() {
                               className="hidden peer 
                      focus:ring-blue-500 h-4 w-4 
                      border border-gray-300 rounded-sm
-                     checked:bg-blue-600 checked:border-transparent"
+                     checked:bg-blue-500 checked:border-transparent"
                               {...register('selectedDays')}
                             />
                             <label htmlFor={day}
                               className="inline-flex items-center
-                          peer-checked:bg-blue-600 peer-checked:text-white
-                          peer-focus:ring peer-focus:ring-blue-200
+                          peer-checked:bg-blue-500 peer-checked:text-white
+                          peer-focus:ring peer-focus:ring-blue-500
                           rounded-md px-2 py-1 text-sm font-medium">
                               {day}
                             </label>

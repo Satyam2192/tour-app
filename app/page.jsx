@@ -18,7 +18,7 @@ const TourListingPage = () => {
   }, []);
 
   return (
-    <section className="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen">
+    <section className="flex flex-col justify-center antialiased bg-gray-900 text-gray-400 min-h-screen">
       <div className="max-w-6xl mx-auto p-4 sm:px-6 h-full">
         <Grid container spacing={9}>
           {tours.map((tour) => (
